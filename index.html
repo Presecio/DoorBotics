@@ -77,11 +77,13 @@ nav {
 
 /* ── HERO ── */
 .hero {
-  min-height: 100vh;
+  min-height: 100svh;
+  height: 100svh;
   background: #111;
   display: flex; align-items: center; justify-content: center;
   position: relative; overflow: hidden;
   padding-top: 70px;
+  box-sizing: border-box;
 }
 
 /* Diagonal light sweep */
@@ -474,8 +476,8 @@ footer {
   .nav-wordmark .wm-sub { font-size: 6px; letter-spacing: 2px; }
   .nav-wordmark { padding: 5px 10px; }
 
-  .hero { padding-top: 60px; min-height: auto; padding-bottom: 0; }
-  .hero-content { padding: 40px 20px 48px; }
+  .hero { padding-top: 60px; min-height: 100svh; height: 100svh; padding-bottom: 0; box-sizing: border-box; }
+  .hero-content { padding: 32px 20px; display: flex; flex-direction: column; justify-content: center; }
   .hero-wordmark { padding: 14px 20px; margin-bottom: 28px; }
   .hero-wordmark .hw-title { font-size: 42px; letter-spacing: 4px; }
   .hero-wordmark .hw-sub { font-size: 8px; letter-spacing: 3px; }
